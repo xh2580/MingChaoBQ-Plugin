@@ -1,4 +1,4 @@
-# MingChaoBQ-Yunzai
+# MingChaoBQ-Plugin
 
 鸣潮表情包云崽（Yunzai）插件，移植自 GsCore 插件 `Xbaiyz12/MingChaoBQ`。
 
@@ -6,7 +6,7 @@
 
 ## 安装
 
-1. 将整个 `MingChaoBQ-Yunzai` 目录放入云崽根目录的 `plugins/` 下。
+1. 将整个 `MingChaoBQ-Plugin` 目录放入云崽根目录的 `plugins/` 下。
 2. 确认云崽已经安装依赖（本插件只依赖 `yaml`，云崽本身已带）。
 3. 重启云崽。
 4. 发送 `bq帮助` 查看帮助图。
