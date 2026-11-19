@@ -1,0 +1,63 @@
+# 鸣潮表情包 Yunzai 插件配置
+# 修改后重启或等待配置读取即可生效
+
+# 总开关，关闭后所有群都无法使用本插件
+mcbq_enable: true
+
+# 群白名单：开启后只有名单中的群可用
+mcbq_whitelist_enable: false
+mcbq_whitelist: []
+
+# 群黑名单：优先级高于白名单
+mcbq_blacklist: []
+
+# 角色别名，每行一个：角色名:别名1,别名2
+mcbq_char_alias: []
+
+# 帮助图素材，放在 data/MingChaoBQ/ 下的图片文件名，留空使用默认
+mcbq_banner_bg: ''
+mcbq_help_bg: ''
+mcbq_image_max_width: '1200'
+
+# API 优先：开启后所有指令优先从呜哇小站 API 取图，失败回退本地
+mcbq_api_enable: false
+# API 等待上限（秒），填 0 表示不限制
+mcbq_api_timeout: '3'
+mcbq_api_base: 'https://emoji.wuwa.games/apis/api.random-emoji.wuwa.games'
+mcbq_api_token: ''
+mcbq_api_random_path: '/v1alpha1/random'
+mcbq_api_character_param: 'character'
+# API 结果保存到本地 data/MingChaoBQ/API/角色名/
+mcbq_api_save_local: true
+
+# 内置表情包：首次更新索引时自动下载约 143MB 素材
+mcbq_builtin_auto_fetch: true
+# 留空使用默认 GitHub Release 地址，可换成国内镜像直链
+mcbq_builtin_pack_url: ''
+
+# 呜哇小站接口
+mcbq_site_enable: true
+# 单次拉取上限（张），填 0 表示不限制
+mcbq_site_fetch_max: '100'
+# 本地没有时向小站取图
+mcbq_site_random_fallback: true
+
+# 屏蔽表情关键词，一行一个，匹配表情 id、包名、角色名、画师名
+mcbq_block_list: []
+
+# 戳一戳
+mcbq_poke_enable: true
+# 群专属戳一戳角色：群号:角色名，一行一个
+mcbq_poke_group_roles: []
+# 设置戳一戳角色的最低权限：0=主人 1=超级用户 2=群主 3=管理员 6=所有人
+mcbq_poke_set_pm: '3'
+
+# 连发表情合并转发
+mcbq_burst_forward: true
+# 添加表情的最低权限：0=主人 1=超级用户 2=群主 3=管理员 6=所有人
+mcbq_upload_pm: '0'
+
+# 索引自动更新
+mcbq_index_auto_update: true
+mcbq_index_update_hour: '4'
+mcbq_index_update_minute: '0'

@@ -1,0 +1,19 @@
+{
+  "name": "mcbq-plugin",
+  "version": "1.0.0",
+  "description": "鸣潮表情包 Yunzai 插件：随机、列表、上传、戳一戳与呜哇小站拉取",
+  "type": "module",
+  "main": "index.js",
+  "author": "xh2580",
+  "license": "UNLICENSED",
+  "keywords": [
+    "yunzai",
+    "yunzai-plugin",
+    "mingchao",
+    "wuthering-waves",
+    "emoji"
+  ],
+  "dependencies": {
+    "yaml": "^2.4.0"
+  }
+}
