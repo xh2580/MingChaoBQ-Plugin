@@ -85,8 +85,10 @@ export function getStr(key) {
 }
 
 export function getInt(key, fallback = 0) {
-  const value = getStr(key).trim()
-  return /^\d+$/.test(value) ? Number(value) : fallback
+  const value = load()[key]
+  if (typeof value === 'number' && Number.isFinite(value)) return Math.trunc(value)
+  const text = String(value ?? '').trim()
+  return /^\d+$/.test(text) ? Number(text) : fallback
 }
 
 export function getList(key) {
